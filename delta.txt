@@ -1,0 +1,17 @@
+
+Common Merge Commands
+
+• git merge <branch> – Merges the specified branch into your current branch.
+• git merge --no-ff <branch> – Forces a merge commit even if a fast-forward merge is possible.
+• git merge --ff-only <branch> – Merges only if a fast-forward is possible; aborts otherwise.
+• git merge --squash <branch> – Combines all commits from the target branch into a single staged change without creating a merge commit.
+• git merge --abort – Stops a merge in progress and resets back to the pre-merge state (useful after conflicts).
+• git merge --continue – Resumes the merge after you resolve conflicts and stage the changes.
+
+Types of Merges
+
+• Fast-Forward Merge: Moves the branch pointer forward to the latest commit when the target branch has no new commits since diverging. No merge commit is created.
+• Three-Way Merge (True Merge): Creates a new merge commit with two parents when both branches have diverged and contain independent commits.
+• Squash Merge: Rolls up all commits from a feature branch into one commit on the target branch, keeping history linear without recording branch lineage.
+• Octopus Merge: Merges more than two branches at once (commonly used to combine several clean, conflict-free feature branches).
+• Ours / Recursive / Strategy-Specific Merges: Uses specific merge strategies (like -s ours to keep the current branch's code while recording a merge) for special history or conflict scenarios.
