@@ -1,0 +1,1 @@
+ cover creating, listing, switching, merging, and deleting branches.
