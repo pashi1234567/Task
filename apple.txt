@@ -1,0 +1,9 @@
+
+Step	Step Name	Primary Command(s)	Purpose
+1	Initialize or Clone	git init or git clone <url>	Create a new local repository or download an existing one.
+2	Pull Latest Changes	git pull origin main	Sync your local branch with the latest remote updates before starting work.
+3	Create a Branch	git checkout -b <branch-name>	Isolate your new feature or bug fix from the main codebase.
+4	Check Status & Stage	git status & git add .	Review modified files and move them to the staging area (index).
+5	Commit Changes	git commit -m "message"	Save a permanent snapshot of staged changes to your local history.
+6	Push to Remote	git push -u origin <branch-name>	Upload your local branch and commits to a remote host like GitHub.
+7	Merge Changes	git checkout main & git merge <branch-name>	Combine your completed branch back into the main branch.
